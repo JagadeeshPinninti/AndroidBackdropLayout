@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BACK LAYOUT"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdi_apple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apple" />
+
+        <RadioButton
+            android:id="@+id/rdi_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orange" />
+
+        <RadioButton
+            android:id="@+id/rdi_watermelon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watermelon" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Picture"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdi_picture_one"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_background" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Picture 1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdi_picture_two"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Picture 2"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+</LinearLayout>
